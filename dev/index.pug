@@ -1,0 +1,25 @@
+doctype html
+html(lang="ru")
+    head
+    meta(charset='UTF-8')
+    title stress
+    link(rel="stylesheet", href="./css/style.css")
+    body
+        main
+            header.header
+                .header__cont
+                    a.header__logo(href='#')
+                        img.header__logo-image(src="./img/header-logo.png", alt='logo')
+                    nav.header__nav
+                        ul.header__nav-list
+                            li.header__nav-item
+                                a.header__nav-link(href='#') Принципы действия
+                            li.header__nav-item
+                                a.header__nav-link(href='#') Форматы
+                            li.header__nav-item
+                                a.header__nav-link(href='#') Частые вопросы
+                            li.header__nav-item
+                                a.header__nav-link(href='#') Отслеживание заказов
+            include includes/title.pug
+            include includes/help.pug
+            include includes/profession.pug
